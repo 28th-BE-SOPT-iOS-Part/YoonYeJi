@@ -6,7 +6,7 @@
 		 가독성 높은 텍스트,  이해하기 쉬운 아이콘, 최소화된 장식, 기능 주도의 디자인
 	 2. **Deference**  
 			 전체 화면을 활용한 컨텐츠 표시,  베젤, 그라데이션 및 그림자를 최소한으로 사용하여 인터페이스를 밝게 유지
-	 3. **Depth**
+	 3. **Depth**  
 	   레이어와 모션을 활용하여 계층 구조 표현, 컨텐츠를 이동할 때 깊이감을 주도록 화면 전환
 * **디자인 6원칙**
 	1. **Aesthetic Integrity** (심미적 통일)
@@ -37,9 +37,9 @@
 **모달(Modal)** 혹은 **네비게이션(Navigation)** 방식 활용
 1. **모달(Modal)**
 새로운 창이 기존 창 위에 뜨는 방식
-	* **Seque를 통한 화면 전환**
+	* **Seque를 통한 화면 전환**  
 ![image](https://user-images.githubusercontent.com/69361613/113988485-7d4c6700-988a-11eb-972a-f82fb93448ec.png)
-	* **코드를 통한 화면 전환**
+	* **코드를 통한 화면 전환**  
 		1. 전환하려는 뷰와 연결할 ViewController 생성
 		2. Custom Class 의 Class 이름과 identifier를 생성한 ViewController의 이름과 동일하게 설정
 		3. ViewController와 전환에 사용할 버튼 연결
@@ -54,7 +54,7 @@
 		self.dismiss(animated: true, completion: nil)
 		~~~
  2. **네비게이션(Navigation)**  
- 깊이와 흐름을 나타내기 위해 사용하는 구조, modal 뷰와 달리 자식뷰를 Navigation Stack에 쌓고 관리
+ 깊이와 흐름을 나타내기 위해 사용하는 구조, modal 뷰와 달리 자식뷰를 Navigation Stack에 쌓고 관리  
 	 * present가 아닌 push를 통해 뷰를 navigation stack에 쌓아감  
 	 ~~~swift
 	 self.navigationController?.pushViewController(nextVC, animated: true)
