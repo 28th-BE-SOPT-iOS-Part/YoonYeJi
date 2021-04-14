@@ -18,7 +18,9 @@ class firstViewController: UIViewController {
 
     @IBAction func createId(_ sender: Any) {
         
-        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "SignUpViewController") as? SignUpViewController else { return }
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "friendTabViewController") as? friendTabViewController else {
+            return
+        }
         
         self.navigationController?.pushViewController(nextVC, animated: true)
         
@@ -26,10 +28,12 @@ class firstViewController: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         
-        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "CheckViewController") as? CheckViewController else { return }
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "friendTabViewController") as? friendTabViewController else {
+            return
+        }
         
-        nextVC.name = email.text
-        nextVC.modalPresentationStyle = .fullScreen
+//        nextVC.name = email.text
+//        nextVC.modalPresentationStyle = .fullScreen
         
         if email.text?.isEmpty == true || password.text?.isEmpty == true {
             return

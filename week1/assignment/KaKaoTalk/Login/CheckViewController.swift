@@ -9,6 +9,8 @@ import UIKit
 
 class CheckViewController: UIViewController {
 
+    
+    
     @IBOutlet weak var nameLabel: UILabel!
     var name : String?
     
@@ -26,8 +28,12 @@ class CheckViewController: UIViewController {
 
     @IBAction func check(_ sender: Any) {
         
-        dismiss(animated: true, completion: nil)
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "friendTabViewController") as? friendTabViewController else {
+            return
+        }
         
+        self.navigationController?.pushViewController(nextVC, animated: true)
+
         
     }
 }

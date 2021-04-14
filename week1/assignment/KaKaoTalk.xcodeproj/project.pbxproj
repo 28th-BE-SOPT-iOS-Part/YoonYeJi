@@ -15,10 +15,20 @@
 		AA77641926185AB1009E6CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA77641726185AB1009E6CAC /* LaunchScreen.storyboard */; };
 		AA77642226185B13009E6CAC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77642126185B13009E6CAC /* SignUpViewController.swift */; };
 		AA77642526185B35009E6CAC /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77642426185B35009E6CAC /* CheckViewController.swift */; };
+		AA8D89F22626E75700B0194F /* friendTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D89F12626E75700B0194F /* friendTab.storyboard */; };
+		AA8D89F92626E81400B0194F /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D89F82626E81400B0194F /* SecondTab.storyboard */; };
+		AA8D89FC2626E81D00B0194F /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D89FB2626E81D00B0194F /* ThirdTab.storyboard */; };
+		AA8D89FF2626E82C00B0194F /* FourTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D89FE2626E82C00B0194F /* FourTab.storyboard */; };
+		AA8D8A022626E85F00B0194F /* FifthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D8A012626E85F00B0194F /* FifthTab.storyboard */; };
+		AA8D8A052626EC0300B0194F /* friendTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D8A042626EC0300B0194F /* friendTabViewController.swift */; };
+		AA8D8A0A2626EC7400B0194F /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D8A092626EC7400B0194F /* SecondTabViewController.swift */; };
+		AA8D8A0E2626EC7E00B0194F /* ThirdTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D8A0D2626EC7E00B0194F /* ThirdTabViewController.swift */; };
+		AA8D8A142626EC9200B0194F /* FifthTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D8A132626EC9200B0194F /* FifthTabViewController.swift */; };
+		AA8D8A182626EC9B00B0194F /* FourTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D8A172626EC9B00B0194F /* FourTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA77640926185AB0009E6CAC /* sopt_ios_1st.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sopt_ios_1st.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA77640926185AB0009E6CAC /* KaKaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaKaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA77640C26185AB0009E6CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA77640E26185AB0009E6CAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA77641026185AB0009E6CAC /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +38,16 @@
 		AA77641A26185AB1009E6CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA77642126185B13009E6CAC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AA77642426185B35009E6CAC /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		AA8D89F12626E75700B0194F /* friendTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = friendTab.storyboard; sourceTree = "<group>"; };
+		AA8D89F82626E81400B0194F /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
+		AA8D89FB2626E81D00B0194F /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
+		AA8D89FE2626E82C00B0194F /* FourTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourTab.storyboard; sourceTree = "<group>"; };
+		AA8D8A012626E85F00B0194F /* FifthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FifthTab.storyboard; sourceTree = "<group>"; };
+		AA8D8A042626EC0300B0194F /* friendTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendTabViewController.swift; sourceTree = "<group>"; };
+		AA8D8A092626EC7400B0194F /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
+		AA8D8A0D2626EC7E00B0194F /* ThirdTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabViewController.swift; sourceTree = "<group>"; };
+		AA8D8A132626EC9200B0194F /* FifthTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTabViewController.swift; sourceTree = "<group>"; };
+		AA8D8A172626EC9B00B0194F /* FourTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +64,7 @@
 		AA77640026185AB0009E6CAC = {
 			isa = PBXGroup;
 			children = (
-				AA77640B26185AB0009E6CAC /* sopt_ios_1st */,
+				AA77640B26185AB0009E6CAC /* KaKaoTalk */,
 				AA77640A26185AB0009E6CAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,33 +72,75 @@
 		AA77640A26185AB0009E6CAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA77640926185AB0009E6CAC /* sopt_ios_1st.app */,
+				AA77640926185AB0009E6CAC /* KaKaoTalk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA77640B26185AB0009E6CAC /* sopt_ios_1st */ = {
+		AA77640B26185AB0009E6CAC /* KaKaoTalk */ = {
 			isa = PBXGroup;
 			children = (
+				AA8D89EF2626E4AA00B0194F /* Login */,
+				AA8D89EE2626E4A200B0194F /* Home */,
 				AA77640C26185AB0009E6CAC /* AppDelegate.swift */,
 				AA77640E26185AB0009E6CAC /* SceneDelegate.swift */,
-				AA77641026185AB0009E6CAC /* firstViewController.swift */,
-				AA77641226185AB0009E6CAC /* Main.storyboard */,
-				AA77642126185B13009E6CAC /* SignUpViewController.swift */,
-				AA77642426185B35009E6CAC /* CheckViewController.swift */,
 				AA77641526185AB1009E6CAC /* Assets.xcassets */,
 				AA77641726185AB1009E6CAC /* LaunchScreen.storyboard */,
 				AA77641A26185AB1009E6CAC /* Info.plist */,
 			);
-			path = sopt_ios_1st;
+			path = KaKaoTalk;
+			sourceTree = "<group>";
+		};
+		AA8D89EE2626E4A200B0194F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA8D8A082626EC5D00B0194F /* Controller */,
+				AA8D8A072626EC4F00B0194F /* Storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AA8D89EF2626E4AA00B0194F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AA77641026185AB0009E6CAC /* firstViewController.swift */,
+				AA77641226185AB0009E6CAC /* Main.storyboard */,
+				AA77642126185B13009E6CAC /* SignUpViewController.swift */,
+				AA77642426185B35009E6CAC /* CheckViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AA8D8A072626EC4F00B0194F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA8D89F12626E75700B0194F /* friendTab.storyboard */,
+				AA8D89F82626E81400B0194F /* SecondTab.storyboard */,
+				AA8D89FB2626E81D00B0194F /* ThirdTab.storyboard */,
+				AA8D89FE2626E82C00B0194F /* FourTab.storyboard */,
+				AA8D8A012626E85F00B0194F /* FifthTab.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AA8D8A082626EC5D00B0194F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA8D8A042626EC0300B0194F /* friendTabViewController.swift */,
+				AA8D8A092626EC7400B0194F /* SecondTabViewController.swift */,
+				AA8D8A0D2626EC7E00B0194F /* ThirdTabViewController.swift */,
+				AA8D8A172626EC9B00B0194F /* FourTabViewController.swift */,
+				AA8D8A132626EC9200B0194F /* FifthTabViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA77640826185AB0009E6CAC /* sopt_ios_1st */ = {
+		AA77640826185AB0009E6CAC /* KaKaoTalk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA77641D26185AB1009E6CAC /* Build configuration list for PBXNativeTarget "sopt_ios_1st" */;
+			buildConfigurationList = AA77641D26185AB1009E6CAC /* Build configuration list for PBXNativeTarget "KaKaoTalk" */;
 			buildPhases = (
 				AA77640526185AB0009E6CAC /* Sources */,
 				AA77640626185AB0009E6CAC /* Frameworks */,
@@ -88,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = sopt_ios_1st;
+			name = KaKaoTalk;
 			productName = sopt_ios_1st;
-			productReference = AA77640926185AB0009E6CAC /* sopt_ios_1st.app */;
+			productReference = AA77640926185AB0009E6CAC /* KaKaoTalk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA77640426185AB0009E6CAC /* Build configuration list for PBXProject "sopt_ios_1st" */;
+			buildConfigurationList = AA77640426185AB0009E6CAC /* Build configuration list for PBXProject "KaKaoTalk" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA77640826185AB0009E6CAC /* sopt_ios_1st */,
+				AA77640826185AB0009E6CAC /* KaKaoTalk */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA77641926185AB1009E6CAC /* LaunchScreen.storyboard in Resources */,
+				AA8D89FF2626E82C00B0194F /* FourTab.storyboard in Resources */,
+				AA8D8A022626E85F00B0194F /* FifthTab.storyboard in Resources */,
+				AA8D89F22626E75700B0194F /* friendTab.storyboard in Resources */,
+				AA8D89F92626E81400B0194F /* SecondTab.storyboard in Resources */,
 				AA77641626185AB1009E6CAC /* Assets.xcassets in Resources */,
+				AA8D89FC2626E81D00B0194F /* ThirdTab.storyboard in Resources */,
 				AA77641426185AB0009E6CAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,11 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8D8A182626EC9B00B0194F /* FourTabViewController.swift in Sources */,
+				AA8D8A0E2626EC7E00B0194F /* ThirdTabViewController.swift in Sources */,
 				AA77642226185B13009E6CAC /* SignUpViewController.swift in Sources */,
 				AA77641126185AB0009E6CAC /* firstViewController.swift in Sources */,
 				AA77640D26185AB0009E6CAC /* AppDelegate.swift in Sources */,
+				AA8D8A0A2626EC7400B0194F /* SecondTabViewController.swift in Sources */,
 				AA77642526185B35009E6CAC /* CheckViewController.swift in Sources */,
+				AA8D8A052626EC0300B0194F /* friendTabViewController.swift in Sources */,
 				AA77640F26185AB0009E6CAC /* SceneDelegate.swift in Sources */,
+				AA8D8A142626EC9200B0194F /* FifthTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +368,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52RL92ZJC4;
-				INFOPLIST_FILE = sopt_ios_1st/Info.plist;
+				INFOPLIST_FILE = KaKaoTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sopt-ios-1st";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KaKaoTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,12 +387,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52RL92ZJC4;
-				INFOPLIST_FILE = sopt_ios_1st/Info.plist;
+				INFOPLIST_FILE = KaKaoTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sopt-ios-1st";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KaKaoTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA77640426185AB0009E6CAC /* Build configuration list for PBXProject "sopt_ios_1st" */ = {
+		AA77640426185AB0009E6CAC /* Build configuration list for PBXProject "KaKaoTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA77641B26185AB1009E6CAC /* Debug */,
@@ -339,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA77641D26185AB1009E6CAC /* Build configuration list for PBXNativeTarget "sopt_ios_1st" */ = {
+		AA77641D26185AB1009E6CAC /* Build configuration list for PBXNativeTarget "KaKaoTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA77641E26185AB1009E6CAC /* Debug */,

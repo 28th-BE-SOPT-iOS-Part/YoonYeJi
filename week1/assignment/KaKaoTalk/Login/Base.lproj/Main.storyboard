@@ -11,7 +11,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="firstViewController" id="BYZ-38-t0r" customClass="firstViewController" customModule="sopt_ios_1st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstViewController" id="BYZ-38-t0r" customClass="firstViewController" customModule="KaKaoTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +100,18 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
+        <!--friendTab-->
+        <scene sceneID="iwJ-ZF-KPB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="friendTab" id="kV5-FQ-VdG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="770-x4-hUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="581"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="McN-3X-5w7">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="IuQ-aA-BJ0" customClass="SignUpViewController" customModule="sopt_ios_1st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="IuQ-aA-BJ0" customClass="SignUpViewController" customModule="KaKaoTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jwk-AI-2SY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +184,7 @@
         <!--Check View Controller-->
         <scene sceneID="g7A-Si-vo1">
             <objects>
-                <viewController storyboardIdentifier="CheckViewController" id="dhD-Pd-c2f" customClass="CheckViewController" customModule="sopt_ios_1st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckViewController" id="dhD-Pd-c2f" customClass="CheckViewController" customModule="KaKaoTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vzv-r8-wKg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,13 +222,14 @@
                             <constraint firstItem="ikm-3l-UKv" firstAttribute="trailing" secondItem="D5h-vp-JVP" secondAttribute="trailing" constant="10" id="zTj-KN-9VM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="htB-IG-UeO"/>
                     <connections>
                         <outlet property="nameLabel" destination="D5h-vp-JVP" id="eNF-Cn-YdA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5P-ul-FrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2447.826086956522" y="113.83928571428571"/>
+            <point key="canvasLocation" x="2541" y="114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C2e-3N-d4X">
