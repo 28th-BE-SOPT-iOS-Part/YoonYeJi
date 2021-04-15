@@ -31,12 +31,11 @@ class firstViewController: UIViewController {
         let TabStoryboard = UIStoryboard(name: "FriendTab", bundle: nil)
         let nextVC = TabStoryboard.instantiateViewController(identifier: "FriendTabViewController")
 
-        nextVC.modalPresentationStyle = .fullScreen
         
         if email.text?.isEmpty == true || password.text?.isEmpty == true {
             return
         } else {
-            self.present(nextVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
        
     }
