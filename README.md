@@ -3,7 +3,7 @@
 
 | Week | Contents | Readme |Assignment|
 |--|--|--|--|
-|week1|iOS 기초 , H.I.G , 화면 전환  |[README](https://github.com/28th-BE-SOPT-iOS-Part/YoonYeJi/tree/main/week1/seminar)|[카카오톡 로그인 및 회원가입 뷰 구현](https://github.com/28th-BE-SOPT-iOS-Part/YoonYeJi/tree/main/week1/assignment)|
+|week1|iOS 기초, H.I.G, 화면 전환  |[README](https://github.com/28th-BE-SOPT-iOS-Part/YoonYeJi/blob/main/seminar/Readme.md)|[카카오톡 로그인 및 회원가입 뷰 구현](https://github.com/28th-BE-SOPT-iOS-Part/YoonYeJi/blob/main/assignment/README/Readme.md)|
 |week2|AutoLayout, ScrollView ||
 |week3|TableView, CollectionView, 데이터 전달 |
 |week4|networking, CocoaPod|
