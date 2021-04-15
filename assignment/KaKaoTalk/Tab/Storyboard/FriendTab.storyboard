@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T9t-it-R0X">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Friend Tab View Controller-->
+        <scene sceneID="MKN-1y-07m">
+            <objects>
+                <viewController id="G89-zG-VM1" customClass="FriendTabViewController" customModule="KaKaoTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ou-ro-d8n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IM-Kx-QXW">
+                                <rect key="frame" x="14" y="59" width="39" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkZ-91-jam">
+                                <rect key="frame" x="14" y="104" width="59" height="58"/>
+                                <state key="normal" image="friendtabProfileImg"/>
+                                <connections>
+                                    <action selector="profileImgClicked:" destination="G89-zG-VM1" eventType="touchUpInside" id="l9R-d1-XLY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0GJ-Xt-hg3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2IM-Kx-QXW" firstAttribute="top" secondItem="0GJ-Xt-hg3" secondAttribute="top" constant="15" id="7ux-vb-YfZ"/>
+                            <constraint firstItem="NkZ-91-jam" firstAttribute="top" secondItem="2IM-Kx-QXW" secondAttribute="bottom" constant="18" id="Ela-h0-Uno"/>
+                            <constraint firstItem="2IM-Kx-QXW" firstAttribute="leading" secondItem="0GJ-Xt-hg3" secondAttribute="leading" constant="14" id="aVP-Lt-diC"/>
+                            <constraint firstItem="NkZ-91-jam" firstAttribute="leading" secondItem="2IM-Kx-QXW" secondAttribute="leading" id="qEi-hn-9PR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="qu2-Qh-FUG">
+                        <imageReference key="image" image="person" catalog="system" renderingMode="original"/>
+                        <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocp-2l-tsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665.21739130434787" y="126.5625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="co9-LP-WoW">
+            <objects>
+                <tabBarController storyboardIdentifier="FriendTabViewController" automaticallyAdjustsScrollViewInsets="NO" id="T9t-it-R0X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="406-In-HYw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G89-zG-VM1" kind="relationship" relationship="viewControllers" id="mze-Ev-OLD"/>
+                        <segue destination="zeM-h8-i0q" kind="relationship" relationship="viewControllers" id="bTB-jg-jaw"/>
+                        <segue destination="MDS-Ox-jkX" kind="relationship" relationship="viewControllers" id="xVS-yD-SIy"/>
+                        <segue destination="Rod-Rg-2gi" kind="relationship" relationship="viewControllers" id="83m-2n-M4f"/>
+                        <segue destination="BKE-i7-vcS" kind="relationship" relationship="viewControllers" id="jt7-f7-Gwh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEY-AR-aTn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-244.92753623188409" y="126.5625"/>
+        </scene>
+        <!--SecondTab-->
+        <scene sceneID="cG9-1P-0Mk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondTab" id="zeM-h8-i0q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Go2-Vu-5Sz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmR-Xk-OlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="631"/>
+        </scene>
+        <!--ThirdTab-->
+        <scene sceneID="1ff-WO-zjx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdTab" id="MDS-Ox-jkX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="oEK-aT-VId"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceg-JU-CXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="643"/>
+        </scene>
+        <!--FourthTab-->
+        <scene sceneID="cNU-za-hck">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FourthTab" id="Rod-Rg-2gi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qcr-Xn-vTY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCZ-IW-jzg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="661"/>
+        </scene>
+        <!--FifthTab-->
+        <scene sceneID="MX3-y6-vqq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FifthTab" id="BKE-i7-vcS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Zda-GT-bpm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4re-eA-aJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="656"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="friendtabProfileImg" width="59" height="58"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
