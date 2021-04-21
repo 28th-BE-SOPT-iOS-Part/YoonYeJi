@@ -19,7 +19,7 @@ class FriendTabViewController: UIViewController {
         
         let profileStoryboard = UIStoryboard.init(name: "Profile", bundle: nil)
         let nextVC = profileStoryboard.instantiateViewController(identifier: "ProfileViewController")
-        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalPresentationStyle = .overFullScreen
         
         self.present(nextVC, animated: true, completion: nil)
        
