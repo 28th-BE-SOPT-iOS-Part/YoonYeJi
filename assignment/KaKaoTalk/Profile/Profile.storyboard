@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-gr-eaA">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-gr-eaA">
                                 <rect key="frame" x="80" y="732" width="254" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZd-af-2Ca">
-                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="84.5" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ap-rW-rlr">
                                                 <rect key="frame" x="0.0" y="20" width="71.5" height="80"/>
@@ -34,7 +34,7 @@
                                         <color key="backgroundColor" red="0.41960784309999999" green="0.44705882349999998" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="but-aI-0y2">
-                                        <rect key="frame" x="91.5" y="0.0" width="71" height="100"/>
+                                        <rect key="frame" x="84.5" y="0.0" width="85" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaY-vj-pT0">
                                                 <rect key="frame" x="0.0" y="20" width="71.5" height="80"/>
@@ -48,7 +48,7 @@
                                         <color key="backgroundColor" red="0.41960784313725491" green="0.44705882352941173" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYT-cg-r2P">
-                                        <rect key="frame" x="182.5" y="0.0" width="71.5" height="100"/>
+                                        <rect key="frame" x="169.5" y="0.0" width="84.5" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6L-vl-k02">
                                                 <rect key="frame" x="0.0" y="20" width="71.5" height="80"/>
@@ -99,11 +99,10 @@
                         <color key="backgroundColor" red="0.41960784313725491" green="0.44705882352941173" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="GL1-p9-ryi" firstAttribute="top" secondItem="rBT-Sj-msE" secondAttribute="bottom" constant="40" id="Fl3-ap-g69"/>
-                            <constraint firstItem="NeC-EH-K1K" firstAttribute="trailing" secondItem="1iL-gr-eaA" secondAttribute="trailing" constant="80" id="PAg-Vs-QhL"/>
                             <constraint firstItem="GL1-p9-ryi" firstAttribute="centerX" secondItem="NeC-EH-K1K" secondAttribute="centerX" id="RRj-fD-EJ5"/>
                             <constraint firstItem="zga-Ci-qAg" firstAttribute="centerX" secondItem="NeC-EH-K1K" secondAttribute="centerX" id="Rsb-lE-oQd"/>
+                            <constraint firstItem="1iL-gr-eaA" firstAttribute="centerX" secondItem="NeC-EH-K1K" secondAttribute="centerX" id="TRo-jJ-3Sf"/>
                             <constraint firstItem="rBT-Sj-msE" firstAttribute="centerX" secondItem="NeC-EH-K1K" secondAttribute="centerX" id="USP-SR-ywo"/>
-                            <constraint firstItem="1iL-gr-eaA" firstAttribute="leading" secondItem="NeC-EH-K1K" secondAttribute="leading" constant="80" id="V7r-0d-8Zd"/>
                             <constraint firstItem="GL1-p9-ryi" firstAttribute="top" secondItem="1iL-gr-eaA" secondAttribute="top" id="W0b-Ln-am2"/>
                             <constraint firstItem="Xvc-cD-h5x" firstAttribute="leading" secondItem="NeC-EH-K1K" secondAttribute="leading" constant="18" id="XFA-Ij-HrG"/>
                             <constraint firstItem="NeC-EH-K1K" firstAttribute="trailing" secondItem="GL1-p9-ryi" secondAttribute="trailing" id="XQe-cM-7oJ"/>
