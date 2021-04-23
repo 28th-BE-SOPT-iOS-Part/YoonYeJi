@@ -1,5 +1,11 @@
 
 
+![아이폰se](https://user-images.githubusercontent.com/69361613/115853799-85003400-a464-11eb-86e1-95e6eae43f42.gif)
+![아이폰8](https://user-images.githubusercontent.com/69361613/115853818-89c4e800-a464-11eb-99d0-8ff4af75eece.gif)
+![아이폰12](https://user-images.githubusercontent.com/69361613/115853823-8af61500-a464-11eb-8ead-2d2f31fb8c42.gif)  
+아이폰se, 아이폰8, 아이폰12
+
+
 왕초보에게 이번 과제는 참 많은 노력이 필요했는데... 그만큼 얻어가는 것도 많았어요!
 
 ## 현재 스토리보드에서 다른 스토리보드로 전환
@@ -44,7 +50,7 @@ panning 이라는 단어가 좀 생소하게 느껴져서 찾아보니, **'카�
 ### **translation**
 
 ~~~Swift
-func location(in view: UIView?) -> CGPoint
+func translation(in view: UIView?) -> CGPoint
 ~~~ 
 [애플의 공식문서](https://developer.apple.com/documentation/uikit/uipangesturerecognizer/1621207-translation)에 따르면, 
 특정한 뷰의 좌표계에 있는 팬 제스처를 해석하는 메서드라고 합니다. 간단히 말해, 파라미터로 받은 UIView의 이동 위치를 저장하는 메서드라고 생각하면 됩니다.  
