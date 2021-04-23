@@ -1,7 +1,7 @@
 
-
-![아이폰se](https://user-images.githubusercontent.com/69361613/115853799-85003400-a464-11eb-86e1-95e6eae43f42.gif)
-![아이폰8](https://user-images.githubusercontent.com/69361613/115853818-89c4e800-a464-11eb-99d0-8ff4af75eece.gif)
+## 🐙 동작 영상 🐙
+![아이폰se](https://user-images.githubusercontent.com/69361613/115856554-9bf45580-a467-11eb-98ce-9b145d614bd0.gif)
+![아이폰8](https://user-images.githubusercontent.com/69361613/115856575-a0b90980-a467-11eb-96ed-c434069662c6.gif)
 ![아이폰12](https://user-images.githubusercontent.com/69361613/115853823-8af61500-a464-11eb-8ead-2d2f31fb8c42.gif)  
 아이폰se, 아이폰8, 아이폰12
 
