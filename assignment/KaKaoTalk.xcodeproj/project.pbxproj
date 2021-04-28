@@ -14,6 +14,9 @@
 		AA77641626185AB1009E6CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA77641526185AB1009E6CAC /* Assets.xcassets */; };
 		AA77641926185AB1009E6CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA77641726185AB1009E6CAC /* LaunchScreen.storyboard */; };
 		AA77642226185B13009E6CAC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77642126185B13009E6CAC /* SignUpViewController.swift */; };
+		AA88CFBC2639D70B001EEC36 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA88CFBB2639D70B001EEC36 /* FriendDataModel.swift */; };
+		AA88CFC02639D8B4001EEC36 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA88CFBF2639D8B4001EEC36 /* FriendTableViewCell.swift */; };
+		AA88CFC52639FA91001EEC36 /* FriendDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA88CFC42639FA91001EEC36 /* FriendDummyData.swift */; };
 		AA8D8A25262750BA00B0194F /* FriendTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D8A24262750BA00B0194F /* FriendTab.storyboard */; };
 		AA8D8A28262750CC00B0194F /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D8A27262750CC00B0194F /* SecondTab.storyboard */; };
 		AA8D8A2B262750D700B0194F /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8D8A2A262750D700B0194F /* ThirdTab.storyboard */; };
@@ -38,6 +41,9 @@
 		AA77641826185AB1009E6CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA77641A26185AB1009E6CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA77642126185B13009E6CAC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AA88CFBB2639D70B001EEC36 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
+		AA88CFBF2639D8B4001EEC36 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		AA88CFC42639FA91001EEC36 /* FriendDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDummyData.swift; sourceTree = "<group>"; };
 		AA8D8A24262750BA00B0194F /* FriendTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendTab.storyboard; sourceTree = "<group>"; };
 		AA8D8A27262750CC00B0194F /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
 		AA8D8A2A262750D700B0194F /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
@@ -94,6 +100,17 @@
 			path = KaKaoTalk;
 			sourceTree = "<group>";
 		};
+		AA88CFBA2639D6E5001EEC36 /* friendTab */ = {
+			isa = PBXGroup;
+			children = (
+				AA88CFBB2639D70B001EEC36 /* FriendDataModel.swift */,
+				AA88CFBF2639D8B4001EEC36 /* FriendTableViewCell.swift */,
+				AA88CFC42639FA91001EEC36 /* FriendDummyData.swift */,
+				AA8D8A332627512A00B0194F /* FriendTabViewController.swift */,
+			);
+			path = friendTab;
+			sourceTree = "<group>";
+		};
 		AA8D89EE2626E4A200B0194F /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +145,7 @@
 		AA8D8A082626EC5D00B0194F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AA8D8A332627512A00B0194F /* FriendTabViewController.swift */,
+				AA88CFBA2639D6E5001EEC36 /* friendTab */,
 				AA8D8A362627524000B0194F /* SecondTabViewController.swift */,
 				AA8D8A392627525100B0194F /* ThirdTabViewController.swift */,
 				AA8D8A3C2627525E00B0194F /* FourthTabViewController.swift */,
@@ -229,6 +246,9 @@
 				AA8D8A342627512A00B0194F /* FriendTabViewController.swift in Sources */,
 				AA8D8A372627524000B0194F /* SecondTabViewController.swift in Sources */,
 				AA8D8A3D2627525E00B0194F /* FourthTabViewController.swift in Sources */,
+				AA88CFC02639D8B4001EEC36 /* FriendTableViewCell.swift in Sources */,
+				AA88CFBC2639D70B001EEC36 /* FriendDataModel.swift in Sources */,
+				AA88CFC52639FA91001EEC36 /* FriendDummyData.swift in Sources */,
 				AA77640D26185AB0009E6CAC /* AppDelegate.swift in Sources */,
 				AA8D8A402627526D00B0194F /* FifthTabViewController.swift in Sources */,
 				AA77640F26185AB0009E6CAC /* SceneDelegate.swift in Sources */,

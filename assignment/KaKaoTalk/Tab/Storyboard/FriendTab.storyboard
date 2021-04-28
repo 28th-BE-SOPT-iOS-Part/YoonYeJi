@@ -18,32 +18,118 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IM-Kx-QXW">
-                                <rect key="frame" x="14" y="59" width="39" height="27"/>
+                                <rect key="frame" x="14" y="59" width="39" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkZ-91-jam">
-                                <rect key="frame" x="14" y="104" width="59" height="58"/>
-                                <state key="normal" image="friendtabProfileImg"/>
-                                <connections>
-                                    <action selector="profileImgClicked:" destination="G89-zG-VM1" eventType="touchUpInside" id="l9R-d1-XLY"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rov-Jc-RMD">
+                                <rect key="frame" x="0.0" y="95.5" width="414" height="717.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Hwg-6S-C17">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkZ-91-jam">
+                                            <rect key="frame" x="14" y="5" width="59" height="59"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="59" id="l3v-pJ-g9t"/>
+                                                <constraint firstAttribute="width" secondItem="NkZ-91-jam" secondAttribute="height" multiplier="1:1" id="lXp-Cz-foq"/>
+                                            </constraints>
+                                            <state key="normal" image="yunyeji"/>
+                                            <connections>
+                                                <action selector="profileImgClicked:" destination="G89-zG-VM1" eventType="touchUpInside" id="l9R-d1-XLY"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="윤예지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRc-l9-B24">
+                                            <rect key="frame" x="83" y="15" width="42" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성형 망함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrN-3a-6HK">
+                                            <rect key="frame" x="83" y="40.5" width="45" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="jrN-3a-6HK" firstAttribute="top" secondItem="pRc-l9-B24" secondAttribute="bottom" constant="6" id="7fk-FR-Nx1"/>
+                                        <constraint firstItem="NkZ-91-jam" firstAttribute="leading" secondItem="Hwg-6S-C17" secondAttribute="leading" constant="14" id="MaX-jk-R2P"/>
+                                        <constraint firstItem="pRc-l9-B24" firstAttribute="top" secondItem="Hwg-6S-C17" secondAttribute="top" constant="15" id="XAc-f7-xlE"/>
+                                        <constraint firstItem="NkZ-91-jam" firstAttribute="top" secondItem="Hwg-6S-C17" secondAttribute="top" constant="5" id="Xep-Kt-fpK"/>
+                                        <constraint firstItem="jrN-3a-6HK" firstAttribute="leading" secondItem="pRc-l9-B24" secondAttribute="leading" id="lqd-JS-4XD"/>
+                                        <constraint firstItem="pRc-l9-B24" firstAttribute="leading" secondItem="NkZ-91-jam" secondAttribute="trailing" constant="10" id="vg0-ro-5XY"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FriendTableViewCell" rowHeight="50" id="EaN-UI-jYs" customClass="FriendTableViewCell" customModule="KaKaoTalk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="101" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EaN-UI-jYs" id="PJu-Aw-e7R">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vUs-X7-xcg">
+                                                    <rect key="frame" x="20" y="4" width="44" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="41" id="TNz-PX-q7a"/>
+                                                        <constraint firstAttribute="width" constant="44" id="png-CE-UOs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6l-Wb-zuY">
+                                                    <rect key="frame" x="75" y="10" width="21" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상태 메시지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgY-FF-zyW">
+                                                    <rect key="frame" x="75" y="25" width="51" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HgY-FF-zyW" firstAttribute="leading" secondItem="w6l-Wb-zuY" secondAttribute="leading" id="3lh-FD-Lul"/>
+                                                <constraint firstAttribute="bottom" secondItem="HgY-FF-zyW" secondAttribute="bottom" constant="11" id="5x4-gd-f5g"/>
+                                                <constraint firstItem="vUs-X7-xcg" firstAttribute="leading" secondItem="PJu-Aw-e7R" secondAttribute="leading" constant="20" symbolic="YES" id="9zX-OH-jDk"/>
+                                                <constraint firstAttribute="bottom" secondItem="vUs-X7-xcg" secondAttribute="bottom" constant="5" id="fUT-Ao-Zcr"/>
+                                                <constraint firstItem="vUs-X7-xcg" firstAttribute="top" secondItem="PJu-Aw-e7R" secondAttribute="top" constant="4" id="neF-vp-B0j"/>
+                                                <constraint firstItem="w6l-Wb-zuY" firstAttribute="leading" secondItem="vUs-X7-xcg" secondAttribute="trailing" constant="11" id="xYk-Tg-JPy"/>
+                                                <constraint firstItem="w6l-Wb-zuY" firstAttribute="top" secondItem="PJu-Aw-e7R" secondAttribute="top" constant="10" id="yP2-fl-vmq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendNameTextView" destination="w6l-Wb-zuY" id="95z-ej-URf"/>
+                                            <outlet property="friendProfileImageView" destination="vUs-X7-xcg" id="YZK-mO-sf1"/>
+                                            <outlet property="friendStatusMessageTextView" destination="HgY-FF-zyW" id="IoE-j4-gu3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0GJ-Xt-hg3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2IM-Kx-QXW" firstAttribute="top" secondItem="0GJ-Xt-hg3" secondAttribute="top" constant="15" id="7ux-vb-YfZ"/>
-                            <constraint firstItem="NkZ-91-jam" firstAttribute="top" secondItem="2IM-Kx-QXW" secondAttribute="bottom" constant="18" id="Ela-h0-Uno"/>
+                            <constraint firstItem="0GJ-Xt-hg3" firstAttribute="trailing" secondItem="Rov-Jc-RMD" secondAttribute="trailing" id="QeC-T4-3LC"/>
+                            <constraint firstItem="0GJ-Xt-hg3" firstAttribute="bottom" secondItem="Rov-Jc-RMD" secondAttribute="bottom" id="Y3H-vm-ZuA"/>
                             <constraint firstItem="2IM-Kx-QXW" firstAttribute="leading" secondItem="0GJ-Xt-hg3" secondAttribute="leading" constant="14" id="aVP-Lt-diC"/>
-                            <constraint firstItem="NkZ-91-jam" firstAttribute="leading" secondItem="2IM-Kx-QXW" secondAttribute="leading" id="qEi-hn-9PR"/>
+                            <constraint firstItem="Rov-Jc-RMD" firstAttribute="top" secondItem="2IM-Kx-QXW" secondAttribute="bottom" constant="10" id="akZ-WB-KTT"/>
+                            <constraint firstItem="Rov-Jc-RMD" firstAttribute="leading" secondItem="0GJ-Xt-hg3" secondAttribute="leading" id="bIp-GO-4oV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="qu2-Qh-FUG">
                         <imageReference key="image" image="person" catalog="system" renderingMode="original"/>
                         <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="friendListHeaderView" destination="Hwg-6S-C17" id="prx-My-uW7"/>
+                        <outlet property="friendListTableView" destination="Rov-Jc-RMD" id="kgE-Eo-ECh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocp-2l-tsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,7 +165,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xmR-Xk-OlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-450" y="631"/>
+            <point key="canvasLocation" x="-507" y="661"/>
         </scene>
         <!--ThirdTab-->
         <scene sceneID="1ff-WO-zjx">
@@ -89,7 +175,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceg-JU-CXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="643"/>
+            <point key="canvasLocation" x="-155" y="661"/>
         </scene>
         <!--FourthTab-->
         <scene sceneID="cNU-za-hck">
@@ -99,7 +185,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCZ-IW-jzg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="661"/>
+            <point key="canvasLocation" x="230" y="661"/>
         </scene>
         <!--FifthTab-->
         <scene sceneID="MX3-y6-vqq">
@@ -109,13 +195,13 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4re-eA-aJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="656"/>
+            <point key="canvasLocation" x="587" y="661"/>
         </scene>
     </scenes>
     <resources>
-        <image name="friendtabProfileImg" width="59" height="58"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="yunyeji" width="294" height="295.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
