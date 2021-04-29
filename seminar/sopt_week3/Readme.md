@@ -81,11 +81,11 @@ delegate 패턴이란 "하나의 객체가 모든 일을 하는 것"이 아니�
     // 데이터를 전달받는 프로토콜
     @IBAction func third(_ sender: Any) {
             
-    guard let vc =  storyboard?.instantiateViewController(identifier: ThirdViewController.identifier) as? ThirdViewController else
-    { return }
-    vc.delegate = self // ThiredViewController에 있는 MyProtocol 타입의 delegate가 바로 나(지금 있는 클래스)다!
+        guard let vc =  storyboard?.instantiateViewController(identifier: ThirdViewController.identifier) as? ThirdViewController else
+        { return }
+        vc.delegate = self // ThiredViewController에 있는 MyProtocol 타입의 delegate가 바로 나(지금 있는 클래스)다!
         
-    self.navigationController!.pushViewController(vc, animated: true)
+        self.navigationController!.pushViewController(vc, animated: true)
         
     }
 
