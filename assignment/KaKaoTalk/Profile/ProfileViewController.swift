@@ -7,12 +7,54 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, protocolData {
+
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileNameTextView: UILabel!
+    private var profileName: String?
+    private var profileImageName: String?
+    private var myProfileData: FriendDataModel? = FriendDataModel(imageName: "yunyeji",
+                                                                 name: "윤예지",
+                                                                 state: "성형 망함 ")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setPanGesture()
+        
+        let friendTabStoryboard = UIStoryboard.init(name: "FriendTab", bundle: nil)
+        let friendTabVC = friendTabStoryboard.instantiateViewController(identifier: "FriendTabViewController") as? FriendTabViewController
+        
+        friendTabVC?.delegate = self
+        setAllData()
+    
+
     }
+    
+    @IBAction func ClosedBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func setAllData() {
+        // HeaderView 예외 처리
+        if profileName != nil {
+            setProfileData(profileName: profileName!, profileImageName: profileImageName ?? "friendtabProfileImg")
+        } else {
+            setProfileData(profileName: myProfileData!.name, profileImageName: myProfileData?.imageName ?? "friendtabProfileImg")
+        }
+    }
+    
+    func setProfileData(profileName: String, profileImageName: String) {
+        if let image = UIImage(named: profileImageName) {
+            self.profileImageView?.image = image
+        }
+        self.profileNameTextView?.text = profileName
+    }
+    
+}
+
+// 팬제스처에 관한 동작 정의
+extension ProfileViewController {
     
     func setPanGesture() {
            let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureDismiss(_:)))
@@ -35,8 +77,12 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    @IBAction func ClosedBtnClicked(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+}
+
+// 데이터 전달에 관한 동작 정의
+extension ProfileViewController {
+    func dataSend(profileName: String, profileImageName: String) {
+        self.profileName = profileName
+        self.profileImageName = profileImageName
     }
-    
 }

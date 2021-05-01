@@ -53,13 +53,23 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bcy-63-sO7">
+                                            <rect key="frame" x="16" y="72" width="382" height="1"/>
+                                            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="QoG-yU-doi"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Bcy-63-sO7" secondAttribute="bottom" id="0x4-Oe-6Ox"/>
+                                        <constraint firstItem="Bcy-63-sO7" firstAttribute="leading" secondItem="Hwg-6S-C17" secondAttribute="leading" constant="16" id="4PJ-x7-NMf"/>
                                         <constraint firstItem="jrN-3a-6HK" firstAttribute="top" secondItem="pRc-l9-B24" secondAttribute="bottom" constant="6" id="7fk-FR-Nx1"/>
                                         <constraint firstItem="NkZ-91-jam" firstAttribute="leading" secondItem="Hwg-6S-C17" secondAttribute="leading" constant="14" id="MaX-jk-R2P"/>
                                         <constraint firstItem="pRc-l9-B24" firstAttribute="top" secondItem="Hwg-6S-C17" secondAttribute="top" constant="15" id="XAc-f7-xlE"/>
                                         <constraint firstItem="NkZ-91-jam" firstAttribute="top" secondItem="Hwg-6S-C17" secondAttribute="top" constant="5" id="Xep-Kt-fpK"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bcy-63-sO7" secondAttribute="trailing" constant="16" id="ex8-5f-x5t"/>
                                         <constraint firstItem="jrN-3a-6HK" firstAttribute="leading" secondItem="pRc-l9-B24" secondAttribute="leading" id="lqd-JS-4XD"/>
                                         <constraint firstItem="pRc-l9-B24" firstAttribute="leading" secondItem="NkZ-91-jam" secondAttribute="trailing" constant="10" id="vg0-ro-5XY"/>
                                     </constraints>

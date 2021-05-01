@@ -30,7 +30,6 @@ class firstViewController: UIViewController {
         
         let TabStoryboard = UIStoryboard(name: "FriendTab", bundle: nil)
         let nextVC = TabStoryboard.instantiateViewController(identifier: "FriendTabViewController")
-
         
         if email.text?.isEmpty == true || password.text?.isEmpty == true {
             return

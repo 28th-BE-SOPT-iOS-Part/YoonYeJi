@@ -112,6 +112,10 @@
                             <constraint firstItem="GL1-p9-ryi" firstAttribute="leading" secondItem="NeC-EH-K1K" secondAttribute="leading" id="tMb-RM-AHr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="zga-Ci-qAg" id="Qx3-5p-Ws8"/>
+                        <outlet property="profileNameTextView" destination="rBT-Sj-msE" id="fNQ-DX-smC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLN-TD-DhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

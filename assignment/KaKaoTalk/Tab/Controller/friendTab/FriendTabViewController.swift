@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol protocolData {
+    func dataSend(profileName: String, profileImageName: String)
+}
+
 class FriendTabViewController: UIViewController {
+    
+    static let identifier : String = "FriendTabViewController"
 
     @IBOutlet weak var friendListTableView: UITableView!
     @IBOutlet weak var friendListHeaderView: UIView!
+    var delegate : protocolData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +30,10 @@ class FriendTabViewController: UIViewController {
     
     @IBAction func profileImgClicked(_ sender: Any) {
         let profileStoryboard = UIStoryboard.init(name: "Profile", bundle: nil)
-        let nextVC = profileStoryboard.instantiateViewController(identifier: "ProfileViewController")
-        nextVC.modalPresentationStyle = .overFullScreen
-        self.present(nextVC, animated: true, completion: nil)
+        let profileVC = profileStoryboard.instantiateViewController(identifier: "ProfileViewController")
+        profileVC.modalPresentationStyle = .overFullScreen
+    
+        self.present(profileVC, animated: true, completion: nil)
        
     }
     
@@ -36,6 +44,19 @@ extension FriendTabViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          return 50
      }
+    
+    // TableViewCell 클릭시 화면 전환
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let profileStoryboard = UIStoryboard.init(name: "Profile", bundle: nil)
+        let profileVC = profileStoryboard.instantiateViewController(identifier: "ProfileViewController")
+        
+        profileVC.modalPresentationStyle = .overFullScreen
+        self.delegate = profileVC as? protocolData
+
+        self.delegate?.dataSend(profileName: friendList[indexPath.row].name, profileImageName: friendList[indexPath.row].imageName)
+        self.present(profileVC, animated: true, completion: nil)
+        
+    }
 }
 
 extension FriendTabViewController : UITableViewDataSource {
@@ -55,3 +76,4 @@ extension FriendTabViewController : UITableViewDataSource {
         return friendCell
     }
 }
+
