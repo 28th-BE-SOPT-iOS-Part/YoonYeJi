@@ -133,8 +133,8 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="qu2-Qh-FUG">
-                        <imageReference key="image" image="person" catalog="system" renderingMode="original"/>
-                        <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                        <imageReference key="image" image="friendTabIcon" renderingMode="original"/>
+                        <imageReference key="selectedImage" image="friendTabIconSelected" symbolScale="large" renderingMode="original"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="friendListHeaderView" destination="Hwg-6S-C17" id="prx-My-uW7"/>
@@ -209,8 +209,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="friendTabIcon" width="18" height="20"/>
+        <image name="friendTabIconSelected" width="18" height="20"/>
         <image name="yunyeji" width="294" height="295.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

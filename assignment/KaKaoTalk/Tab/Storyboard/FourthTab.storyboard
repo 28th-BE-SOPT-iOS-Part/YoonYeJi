@@ -32,8 +32,8 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="tkN-cv-7yj">
-                        <imageReference key="image" image="case" catalog="system" renderingMode="original"/>
-                        <imageReference key="selectedImage" image="case.fill" catalog="system" renderingMode="original"/>
+                        <imageReference key="image" image="shopTabIcon" renderingMode="original"/>
+                        <imageReference key="selectedImage" image="shopTabIconSelected" renderingMode="original"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -43,8 +43,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="case" catalog="system" width="128" height="98"/>
-        <image name="case.fill" catalog="system" width="128" height="98"/>
+        <image name="shopTabIcon" width="19.5" height="19"/>
+        <image name="shopTabIconSelected" width="19.5" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

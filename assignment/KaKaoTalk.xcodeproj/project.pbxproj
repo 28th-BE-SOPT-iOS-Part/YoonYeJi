@@ -32,6 +32,7 @@
 		AAAAE7E9263ED80800363FFA /* MoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAE7E8263ED80800363FFA /* MoreDataModel.swift */; };
 		AAAAE7ED263EDE0700363FFA /* MoreTabDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAE7EC263EDE0700363FFA /* MoreTabDummyData.swift */; };
 		AAAAE7F4263EE31600363FFA /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAE7F3263EE31600363FFA /* MoreCollectionViewCell.swift */; };
+		AAAAE7F9263EF40700363FFA /* MoreCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAE7F8263EF40700363FFA /* MoreCollectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		AAAAE7E8263ED80800363FFA /* MoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDataModel.swift; sourceTree = "<group>"; };
 		AAAAE7EC263EDE0700363FFA /* MoreTabDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabDummyData.swift; sourceTree = "<group>"; };
 		AAAAE7F3263EE31600363FFA /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		AAAAE7F8263EF40700363FFA /* MoreCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				AAAAE7E8263ED80800363FFA /* MoreDataModel.swift */,
 				AAAAE7F3263EE31600363FFA /* MoreCollectionViewCell.swift */,
 				AAAAE7EC263EDE0700363FFA /* MoreTabDummyData.swift */,
+				AAAAE7F8263EF40700363FFA /* MoreCollectionHeaderView.swift */,
 			);
 			path = MoreTab;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				AA8D8A372627524000B0194F /* SecondTabViewController.swift in Sources */,
 				AAAAE7E9263ED80800363FFA /* MoreDataModel.swift in Sources */,
 				AA8D8A3D2627525E00B0194F /* FourthTabViewController.swift in Sources */,
+				AAAAE7F9263EF40700363FFA /* MoreCollectionHeaderView.swift in Sources */,
 				AA88CFC02639D8B4001EEC36 /* FriendTableViewCell.swift in Sources */,
 				AA88CFBC2639D70B001EEC36 /* FriendDataModel.swift in Sources */,
 				AAAAE7ED263EDE0700363FFA /* MoreTabDummyData.swift in Sources */,

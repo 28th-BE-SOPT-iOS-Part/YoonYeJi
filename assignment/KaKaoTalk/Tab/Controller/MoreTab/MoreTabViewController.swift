@@ -8,15 +8,14 @@
 import UIKit
 
 class MoreTabViewController: UIViewController {
-
    
     @IBOutlet weak var MoreCollectionView: UICollectionView!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         MoreCollectionView.delegate = self
         MoreCollectionView.dataSource = self
-        
 
     }
 
@@ -38,10 +37,25 @@ extension MoreTabViewController : UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "MoreCollectionHeaderView", for: indexPath) as? MoreCollectionHeaderView else {
+                return UICollectionReusableView()
+            }
+            
+            header.setData(profileImage: "yunyeji", name: "윤예지", email: "20172062@sungshin.ac.kr")
+           
+            return header
+        default:
+            return UICollectionReusableView()
+        }
+    }
     
 }
 
 extension MoreTabViewController : UICollectionViewDelegate {
+    
 
 }
 
