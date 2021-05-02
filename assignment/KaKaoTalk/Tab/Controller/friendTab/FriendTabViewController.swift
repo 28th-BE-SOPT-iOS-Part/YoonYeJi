@@ -41,9 +41,10 @@ class FriendTabViewController: UIViewController {
 }
 
 extension FriendTabViewController : UITableViewDelegate {
+    // TableViewCell 간격 설정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          return 50
-     }
+    }
     
     // TableViewCell 클릭시 화면 전환
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -55,7 +56,6 @@ extension FriendTabViewController : UITableViewDelegate {
 
         self.delegate?.dataSend(profileName: friendList[indexPath.row].name, profileImageName: friendList[indexPath.row].imageName)
         self.present(profileVC, animated: true, completion: nil)
-        
     }
 }
 

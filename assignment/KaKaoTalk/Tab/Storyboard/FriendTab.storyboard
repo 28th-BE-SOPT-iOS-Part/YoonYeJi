@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="230" y="661"/>
         </scene>
-        <!--FifthTab-->
+        <!--MoreTab-->
         <scene sceneID="MX3-y6-vqq">
             <objects>
-                <viewControllerPlaceholder storyboardName="FifthTab" id="BKE-i7-vcS" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MoreTab" id="BKE-i7-vcS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Zda-GT-bpm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4re-eA-aJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

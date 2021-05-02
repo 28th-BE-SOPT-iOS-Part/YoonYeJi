@@ -25,9 +25,9 @@ class ProfileViewController: UIViewController, protocolData {
         let friendTabStoryboard = UIStoryboard.init(name: "FriendTab", bundle: nil)
         let friendTabVC = friendTabStoryboard.instantiateViewController(identifier: "FriendTabViewController") as? FriendTabViewController
         
+        print(type(of: friendTabVC))
         friendTabVC?.delegate = self
         setAllData()
-    
 
     }
     
