@@ -37,16 +37,16 @@ var friendList : [FriendDataModel] = [
                         state: "만정쓰 ~~~ 보고싶다 그녀의 실물."),
         
         FriendDataModel(imageName: "profileImage8",
-                        name: "원솝트",
-                        state: "배고파요"),
+                        name: "무아요",
+                        state: "aka 중년의 도약"),
         
         FriendDataModel(imageName: "profileImage9",
-                        name: "투솝트",
-                        state: "내꿈은 대나무부자"),
+                        name: "화이팅",
+                        state: "ㄴㅋㄹㅋㅂㄷㅌ 부시자 ~~~"),
         
         FriendDataModel(imageName: "profileImage10",
-                        name: "권솝트",
-                        state: "걱정말라구!")
+                        name: "윤예지가 짱",
+                        state: "내가 짱")
     
 ]
     

@@ -1,23 +1,23 @@
 {
   "images" : [
     {
-      "scale" : "1x",
+      "filename" : "익범-2.png",
       "idiom" : "universal",
-      "filename" : "profileImage4.png"
+      "scale" : "1x"
     },
     {
+      "filename" : "익범-1.png",
       "idiom" : "universal",
-      "filename" : "profileImage4@2x.png",
       "scale" : "2x"
     },
     {
+      "filename" : "익범.png",
       "idiom" : "universal",
-      "filename" : "profileImage4@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
