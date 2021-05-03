@@ -71,6 +71,23 @@ extension FriendTabViewController : UITableViewDelegate {
         self.delegate?.dataSend(profileName: friendList[indexPath.row].name, profileImageName: friendList[indexPath.row].imageName)
         self.present(profileVC, animated: true, completion: nil)
     }
+    
+    // 테이블뷰 스와이프해서 숨김, 차단
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let blockAction = UIContextualAction(style: .destructive, title: "차단") {
+           (action, view, success ) in  }
+        let hideAction = UIContextualAction(style: .normal, title: "숨김") {
+            (action, view, success) in  }
+        hideAction.backgroundColor = .darkGray
+        
+        let config = UISwipeActionsConfiguration(actions: [blockAction, hideAction])
+        config.performsFirstActionWithFullSwipe = false
+        
+        return config
+    }
+
+
 }
 
 extension FriendTabViewController : UITableViewDataSource {
