@@ -8,6 +8,8 @@
 import UIKit
 
 class ProfileViewController: UIViewController, protocolData {
+    
+    static let identifier : String = "ProfileViewController"
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var profileNameTextView: UILabel!
@@ -21,12 +23,6 @@ class ProfileViewController: UIViewController, protocolData {
         super.viewDidLoad()
         
         setPanGesture()
-        
-        let friendTabStoryboard = UIStoryboard.init(name: "FriendTab", bundle: nil)
-        let friendTabVC = friendTabStoryboard.instantiateViewController(identifier: "FriendTabViewController") as? FriendTabViewController
-        
-        print(type(of: friendTabVC))
-        friendTabVC?.delegate = self
         setAllData()
 
     }

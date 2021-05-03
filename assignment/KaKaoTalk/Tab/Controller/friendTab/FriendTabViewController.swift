@@ -12,32 +12,46 @@ protocol protocolData {
 }
 
 class FriendTabViewController: UIViewController {
-    
-    static let identifier : String = "FriendTabViewController"
-
-    @IBOutlet weak var friendListTableView: UITableView!
-    @IBOutlet weak var friendListHeaderView: UIView!
+    // MARK:- Variable Parts
     var delegate : protocolData?
+    static let identifier : String = "FriendTabViewController"
+    
+    //MARK:- @IBoutlet Parts
+    @IBOutlet weak var friendListTableView: UITableView!{
+        didSet {
+            friendListTableView.tableHeaderView = friendListHeaderView
+            friendListTableView.delegate = self
+            friendListTableView.dataSource = self
+            friendListTableView.separatorStyle = .none
+        }
+    }
+    @IBOutlet weak var friendListHeaderView: UIView!
+    
+    //MARK:- Life Cycle Parts
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        friendListTableView.tableHeaderView = friendListHeaderView
-        friendListTableView.delegate = self
-        friendListTableView.dataSource = self
-        friendListTableView.separatorStyle = .none
     }
     
+
     @IBAction func profileImgClicked(_ sender: Any) {
         let profileStoryboard = UIStoryboard.init(name: "Profile", bundle: nil)
         let profileVC = profileStoryboard.instantiateViewController(identifier: "ProfileViewController")
         profileVC.modalPresentationStyle = .overFullScreen
     
         self.present(profileVC, animated: true, completion: nil)
-       
     }
     
-
+    
+    @IBAction func showActionSheet(_ sender: Any) {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "편집", style: .default, handler: nil ))
+        actionSheet.addAction(UIAlertAction(title: "친구 관리", style: .default, handler: nil ))
+        actionSheet.addAction(UIAlertAction(title: "전체 설정", style: .default, handler: nil ))
+        actionSheet.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil ))
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
 }
 
 extension FriendTabViewController : UITableViewDelegate {
@@ -49,7 +63,7 @@ extension FriendTabViewController : UITableViewDelegate {
     // TableViewCell 클릭시 화면 전환
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let profileStoryboard = UIStoryboard.init(name: "Profile", bundle: nil)
-        let profileVC = profileStoryboard.instantiateViewController(identifier: "ProfileViewController")
+        let profileVC = profileStoryboard.instantiateViewController(identifier: ProfileViewController.identifier)
         
         profileVC.modalPresentationStyle = .overFullScreen
         self.delegate = profileVC as? protocolData

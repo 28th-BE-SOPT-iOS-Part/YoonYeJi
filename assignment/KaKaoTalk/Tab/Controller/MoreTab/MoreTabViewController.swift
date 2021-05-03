@@ -27,6 +27,10 @@ extension MoreTabViewController : UICollectionViewDataSource {
         return moreList.count
     }
     
+    func collectionview (_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: MoreCollectionView.frame.size.width, height: 63)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoreCollectionViewCell", for: indexPath) as? MoreCollectionViewCell else {
             return UICollectionViewCell()
@@ -45,7 +49,6 @@ extension MoreTabViewController : UICollectionViewDataSource {
             }
             
             header.setData(profileImage: "yunyeji", name: "윤예지", email: "20172062@sungshin.ac.kr")
-           
             return header
         default:
             return UICollectionReusableView()
@@ -69,12 +72,14 @@ extension MoreTabViewController : UICollectionViewDelegateFlowLayout {
            
            return CGSize(width: cellwidth, height: cellHeight)
        }
+    
        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-           return UIEdgeInsets.zero
+            return UIEdgeInsets(top: 0, left: 19, bottom: 0, right: 19)
        }
        
        
        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+            
            return 19
        }
        
