@@ -75,7 +75,7 @@ extension FriendTabViewController : UITableViewDelegate {
     // 테이블뷰 스와이프해서 숨김, 차단
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let blockAction = UIContextualAction(style: .destructive, title: "차단") { (_, _, _) in  }
+        let blockAction = UIContextualAction(style: .destructive, title: "차단") { _,_,_ in   }
         let hideAction = UIContextualAction(style: .normal, title: "숨김") { (_, _, _) in  }
         hideAction.backgroundColor = .darkGray
         
