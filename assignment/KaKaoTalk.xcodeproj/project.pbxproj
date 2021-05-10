@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119418CA371D29D85CF86547 /* Pods_KaKaoTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38AA90382E6B0E37C9586FA /* Pods_KaKaoTalk.framework */; };
 		AA77640D26185AB0009E6CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77640C26185AB0009E6CAC /* AppDelegate.swift */; };
 		AA77640F26185AB0009E6CAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77640E26185AB0009E6CAC /* SceneDelegate.swift */; };
 		AA77641126185AB0009E6CAC /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77641026185AB0009E6CAC /* firstViewController.swift */; };
@@ -64,6 +65,9 @@
 		AAAAE7EC263EDE0700363FFA /* MoreTabDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabDummyData.swift; sourceTree = "<group>"; };
 		AAAAE7F3263EE31600363FFA /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		AAAAE7F8263EF40700363FFA /* MoreCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionHeaderView.swift; sourceTree = "<group>"; };
+		AF1F4B1CC33CE0CAD013E49A /* Pods-KaKaoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaKaoTalk.release.xcconfig"; path = "Target Support Files/Pods-KaKaoTalk/Pods-KaKaoTalk.release.xcconfig"; sourceTree = "<group>"; };
+		D38AA90382E6B0E37C9586FA /* Pods_KaKaoTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaKaoTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F561F5095E06C635139BAB08 /* Pods-KaKaoTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaKaoTalk.debug.xcconfig"; path = "Target Support Files/Pods-KaKaoTalk/Pods-KaKaoTalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,17 +75,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119418CA371D29D85CF86547 /* Pods_KaKaoTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		529A5A789CA965FCB332F1A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F561F5095E06C635139BAB08 /* Pods-KaKaoTalk.debug.xcconfig */,
+				AF1F4B1CC33CE0CAD013E49A /* Pods-KaKaoTalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7440A6A339E46E04E2A0F3C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D38AA90382E6B0E37C9586FA /* Pods_KaKaoTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA77640026185AB0009E6CAC = {
 			isa = PBXGroup;
 			children = (
 				AA77640B26185AB0009E6CAC /* KaKaoTalk */,
 				AA77640A26185AB0009E6CAC /* Products */,
+				529A5A789CA965FCB332F1A2 /* Pods */,
+				7440A6A339E46E04E2A0F3C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA77641D26185AB1009E6CAC /* Build configuration list for PBXNativeTarget "KaKaoTalk" */;
 			buildPhases = (
+				26AE8609E7E9A264A70ED2CD /* [CP] Check Pods Manifest.lock */,
 				AA77640526185AB0009E6CAC /* Sources */,
 				AA77640626185AB0009E6CAC /* Frameworks */,
 				AA77640726185AB0009E6CAC /* Resources */,
+				348C1C69EEA26551EE173142 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26AE8609E7E9A264A70ED2CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaKaoTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		348C1C69EEA26551EE173142 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaKaoTalk/Pods-KaKaoTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaKaoTalk/Pods-KaKaoTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KaKaoTalk/Pods-KaKaoTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA77640526185AB0009E6CAC /* Sources */ = {
@@ -419,6 +488,7 @@
 		};
 		AA77641E26185AB1009E6CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F561F5095E06C635139BAB08 /* Pods-KaKaoTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +508,7 @@
 		};
 		AA77641F26185AB1009E6CAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1F4B1CC33CE0CAD013E49A /* Pods-KaKaoTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
