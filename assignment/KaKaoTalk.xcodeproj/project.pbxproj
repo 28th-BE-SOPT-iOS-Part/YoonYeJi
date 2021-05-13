@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		119418CA371D29D85CF86547 /* Pods_KaKaoTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38AA90382E6B0E37C9586FA /* Pods_KaKaoTalk.framework */; };
 		AA77640D26185AB0009E6CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77640C26185AB0009E6CAC /* AppDelegate.swift */; };
 		AA77640F26185AB0009E6CAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77640E26185AB0009E6CAC /* SceneDelegate.swift */; };
-		AA77641126185AB0009E6CAC /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77641026185AB0009E6CAC /* firstViewController.swift */; };
+		AA77641126185AB0009E6CAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77641026185AB0009E6CAC /* LoginViewController.swift */; };
 		AA77641426185AB0009E6CAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA77641226185AB0009E6CAC /* Main.storyboard */; };
 		AA77641626185AB1009E6CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA77641526185AB1009E6CAC /* Assets.xcassets */; };
 		AA77641926185AB1009E6CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA77641726185AB1009E6CAC /* LaunchScreen.storyboard */; };
@@ -34,13 +34,20 @@
 		AAAAE7ED263EDE0700363FFA /* MoreTabDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAE7EC263EDE0700363FFA /* MoreTabDummyData.swift */; };
 		AAAAE7F4263EE31600363FFA /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAE7F3263EE31600363FFA /* MoreCollectionViewCell.swift */; };
 		AAAAE7F9263EF40700363FFA /* MoreCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAE7F8263EF40700363FFA /* MoreCollectionHeaderView.swift */; };
+		AAE7E157264C6D1A008BE3C7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7E156264C6D1A008BE3C7 /* UIViewController.swift */; };
+		AAE7E15B264D4956008BE3C7 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7E15A264D4955008BE3C7 /* SignUpService.swift */; };
+		AAE7E161264D4AEA008BE3C7 /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7E160264D4AEA008BE3C7 /* SignUpDataModel.swift */; };
+		AAF3C0922649A8FF00A3DFFE /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3C0912649A8FF00A3DFFE /* LoginService.swift */; };
+		AAF3C0952649BAD400A3DFFE /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3C0942649BAD400A3DFFE /* LoginDataModel.swift */; };
+		AAF3C0982649BB9A00A3DFFE /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3C0972649BB9A00A3DFFE /* APIConstants.swift */; };
+		AAF3C09B2649BE6B00A3DFFE /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3C09A2649BE6B00A3DFFE /* NetworkResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA77640926185AB0009E6CAC /* KaKaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaKaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA77640C26185AB0009E6CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA77640E26185AB0009E6CAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA77641026185AB0009E6CAC /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		AA77641026185AB0009E6CAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA77641326185AB0009E6CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA77641526185AB1009E6CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA77641826185AB1009E6CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +72,13 @@
 		AAAAE7EC263EDE0700363FFA /* MoreTabDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabDummyData.swift; sourceTree = "<group>"; };
 		AAAAE7F3263EE31600363FFA /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		AAAAE7F8263EF40700363FFA /* MoreCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionHeaderView.swift; sourceTree = "<group>"; };
+		AAE7E156264C6D1A008BE3C7 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		AAE7E15A264D4955008BE3C7 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		AAE7E160264D4AEA008BE3C7 /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
+		AAF3C0912649A8FF00A3DFFE /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		AAF3C0942649BAD400A3DFFE /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		AAF3C0972649BB9A00A3DFFE /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		AAF3C09A2649BE6B00A3DFFE /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		AF1F4B1CC33CE0CAD013E49A /* Pods-KaKaoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaKaoTalk.release.xcconfig"; path = "Target Support Files/Pods-KaKaoTalk/Pods-KaKaoTalk.release.xcconfig"; sourceTree = "<group>"; };
 		D38AA90382E6B0E37C9586FA /* Pods_KaKaoTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaKaoTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F561F5095E06C635139BAB08 /* Pods-KaKaoTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaKaoTalk.debug.xcconfig"; path = "Target Support Files/Pods-KaKaoTalk/Pods-KaKaoTalk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +102,6 @@
 				F561F5095E06C635139BAB08 /* Pods-KaKaoTalk.debug.xcconfig */,
 				AF1F4B1CC33CE0CAD013E49A /* Pods-KaKaoTalk.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				AA8D8A49262763B900B0194F /* Profile */,
-				AA8D89EF2626E4AA00B0194F /* Login */,
+				AA8D89EF2626E4AA00B0194F /* Login+SignUp */,
 				AA8D89EE2626E4A200B0194F /* Tab */,
 				AA77640C26185AB0009E6CAC /* AppDelegate.swift */,
 				AA77640E26185AB0009E6CAC /* SceneDelegate.swift */,
@@ -153,14 +166,15 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
-		AA8D89EF2626E4AA00B0194F /* Login */ = {
+		AA8D89EF2626E4AA00B0194F /* Login+SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				AA77641026185AB0009E6CAC /* firstViewController.swift */,
+				AAE7E15F264D4A58008BE3C7 /* Model */,
+				AAE7E15E264D4A43008BE3C7 /* Network */,
+				AAE7E15D264D49E3008BE3C7 /* ViewControllers */,
 				AA77641226185AB0009E6CAC /* Main.storyboard */,
-				AA77642126185B13009E6CAC /* SignUpViewController.swift */,
 			);
-			path = Login;
+			path = "Login+SignUp";
 			sourceTree = "<group>";
 		};
 		AA8D8A072626EC4F00B0194F /* Storyboard */ = {
@@ -206,6 +220,36 @@
 				AAAAE7F8263EF40700363FFA /* MoreCollectionHeaderView.swift */,
 			);
 			path = MoreTab;
+			sourceTree = "<group>";
+		};
+		AAE7E15D264D49E3008BE3C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA77641026185AB0009E6CAC /* LoginViewController.swift */,
+				AA77642126185B13009E6CAC /* SignUpViewController.swift */,
+				AAE7E156264C6D1A008BE3C7 /* UIViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AAE7E15E264D4A43008BE3C7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AAF3C0912649A8FF00A3DFFE /* LoginService.swift */,
+				AAF3C09A2649BE6B00A3DFFE /* NetworkResult.swift */,
+				AAE7E15A264D4955008BE3C7 /* SignUpService.swift */,
+				AAF3C0972649BB9A00A3DFFE /* APIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AAE7E15F264D4A58008BE3C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAF3C0942649BAD400A3DFFE /* LoginDataModel.swift */,
+				AAE7E160264D4AEA008BE3C7 /* SignUpDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,16 +376,23 @@
 				AAAAE7F4263EE31600363FFA /* MoreCollectionViewCell.swift in Sources */,
 				AA77642226185B13009E6CAC /* SignUpViewController.swift in Sources */,
 				AA8D8A512627894800B0194F /* ProfileViewController.swift in Sources */,
-				AA77641126185AB0009E6CAC /* firstViewController.swift in Sources */,
+				AA77641126185AB0009E6CAC /* LoginViewController.swift in Sources */,
 				AA8D8A342627512A00B0194F /* FriendTabViewController.swift in Sources */,
+				AAF3C09B2649BE6B00A3DFFE /* NetworkResult.swift in Sources */,
 				AA8D8A372627524000B0194F /* SecondTabViewController.swift in Sources */,
 				AAAAE7E9263ED80800363FFA /* MoreDataModel.swift in Sources */,
+				AAE7E161264D4AEA008BE3C7 /* SignUpDataModel.swift in Sources */,
+				AAE7E157264C6D1A008BE3C7 /* UIViewController.swift in Sources */,
 				AA8D8A3D2627525E00B0194F /* FourthTabViewController.swift in Sources */,
 				AAAAE7F9263EF40700363FFA /* MoreCollectionHeaderView.swift in Sources */,
+				AAF3C0952649BAD400A3DFFE /* LoginDataModel.swift in Sources */,
 				AA88CFC02639D8B4001EEC36 /* FriendTableViewCell.swift in Sources */,
+				AAE7E15B264D4956008BE3C7 /* SignUpService.swift in Sources */,
 				AA88CFBC2639D70B001EEC36 /* FriendDataModel.swift in Sources */,
 				AAAAE7ED263EDE0700363FFA /* MoreTabDummyData.swift in Sources */,
+				AAF3C0922649A8FF00A3DFFE /* LoginService.swift in Sources */,
 				AA88CFC52639FA91001EEC36 /* FriendDummyData.swift in Sources */,
+				AAF3C0982649BB9A00A3DFFE /* APIConstants.swift in Sources */,
 				AA77640D26185AB0009E6CAC /* AppDelegate.swift in Sources */,
 				AA8D8A402627526D00B0194F /* MoreTabViewController.swift in Sources */,
 				AA77640F26185AB0009E6CAC /* SceneDelegate.swift in Sources */,
