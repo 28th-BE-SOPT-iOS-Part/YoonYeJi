@@ -35,14 +35,13 @@ struct LoginService {
             
             switch dataResponse.result {
             case .success:
-                
-                
                 guard let statusCode = dataResponse.response?.statusCode else {return}
                 guard let value = dataResponse.value else {return}
                 let networkResult = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
-            
-            case .failure: completion(.pathErr)
+                
+            case .failure:
+                completion(.pathErr)
                 
             }
         }
@@ -58,7 +57,9 @@ struct LoginService {
         
         switch statusCode {
             
-        case 200: return .success(decodedData.message)
+        case 200:
+            UserDefaults.standard.set(decodedData.data?.token, forKey: "token")
+            return .success(decodedData.message)
         case 400: return .requestErr(decodedData.message)
         case 500: return .serverErr
         default: return .networkFail

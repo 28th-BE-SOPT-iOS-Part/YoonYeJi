@@ -46,6 +46,7 @@ class firstViewController: UIViewController {
                 if let message = message as? String {
                     self.makeAlert(title: "알림", message: message, okAction: { _ in self.navigationController?.pushViewController(nextVC, animated: true)})
                 }
+                print("토큰 : " + UserDefaults.standard.string(forKey: "token")!)
             case .requestErr(let message):
                 if let message = message as? String {
                     self.makeAlert(title: "알림", message: message)
